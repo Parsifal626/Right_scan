@@ -1,0 +1,8 @@
+<form method="POST" action="{% url 'create_bird' %}">
+    {% csrf_token %}
+    <label for="name">Название птицы:</label>
+    <input type="text" id="name" name="name">
+    <label for="feather_color">Цвет перьев:</label>
+    <input type="text" id="feather_color" name="feather_color">
+    <button type="submit">Создать</button>
+</form>
